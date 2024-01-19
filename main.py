@@ -24,7 +24,7 @@ while True:
     print(f"The computer chose: {computer_choice}")
 
     if user_choice == computer_choice:
-        winner = "Equality"
+        winner = "Drow"
     elif (user_choice == "rock" and computer_choice == "scissor") or \
          (user_choice == "scissor" and computer_choice == "papper") or \
          (user_choice == "papper" and computer_choice == "rock"):
@@ -34,16 +34,16 @@ while True:
 
     if winner == "player":
         player_wins += 1
-        print(f"playerа win!")
+        print(f"You win!")
     elif winner == "computer":
         computer_wins += 1
-        print(f"computer win!")
+        print(f"You lost!")
     else:
-        print(f"Equality!")
+        print(f"Drow!")
         equal += 1
 
-    print(f"Result - player: {player_wins}, computer: {computer_wins}, "
-          f"\nEqualitys: {equal} from total {total_games} games")
+    print(f"Result - player wins: {player_wins}, computer wins: {computer_wins}, "
+          f"\nEqualities: {equal} from total {total_games} games")
 
     play_again_choice = input("Do you want to play again (yes/no)? ").lower()
     if play_again_choice != "yes":
