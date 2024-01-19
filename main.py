@@ -34,12 +34,12 @@ while True:
 
     if winner == "player":
         player_wins += 1
-        print(f"You win!")
+        print("You win!")
     elif winner == "computer":
         computer_wins += 1
-        print(f"You lost!")
+        print("You lost!")
     else:
-        print(f"Drow!")
+        print("Drow!")
         equal += 1
 
     print(f"Results: \nplayer wins: {player_wins}, computer wins: {computer_wins}, "
