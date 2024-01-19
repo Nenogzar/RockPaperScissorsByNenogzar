@@ -10,7 +10,7 @@ while True:
     total_games += 1
     total_repeats += 1
 
-   
+
     while True:
         user_choice = input("Change: rock, scissor or papper: ").lower()
         if user_choice == "rock" or user_choice == "scissor" or user_choice == "papper":
@@ -42,10 +42,10 @@ while True:
         print(f"Drow!")
         equal += 1
 
-    print(f"Result - player wins: {player_wins}, computer wins: {computer_wins}, "
-          f"\nEqualities: {equal} from total {total_games} games")
+    print(f"Results: \nplayer wins: {player_wins}, computer wins: {computer_wins}, "
+          f"\nEqualities {equal} game out of a total of {total_games} games")
 
-    play_again_choice = input("Do you want to play again (yes/no)? ").lower()
+    play_again_choice = input("Do you want to play again (y/n)? ").lower()
     if play_again_choice != "yes":
         print("Thanks for the game!")
         break
